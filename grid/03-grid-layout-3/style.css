@@ -6,6 +6,8 @@
 .container {
   text-align: center;
   display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
 }
 
 .container div {
@@ -18,8 +20,9 @@
 
 .header {
   background-color: #393f4d;
+  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 2fr 4fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
 }
 
@@ -67,6 +70,9 @@
 }
 
 .nav ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .nav ul li {
@@ -104,6 +110,7 @@
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / -1;
 }
 
 .footer p {
